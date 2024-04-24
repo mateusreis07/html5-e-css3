@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias Quiries</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilo/meida-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+            <span id="burguer" onclick="clickMenu()" class="material-symbols-outlined">
+                menu
+            </span>
+        <menu id="itens" >
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h1>Trabalhando com Midias Quiries</h1>
+
+        <img id="phone" src="imagens/icon-phone.png" alt="">
+        <img id="tablet" src="imagens/icon-tablet.png" alt="">
+        <img id="print" src="imagens/icon-print.png" alt="">
+        <img id="pc" src="imagens/icon-pc.png" alt="">
+        <img id="tv" src="imagens/icon-tv.png" alt="">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, repellendus rem quia laboriosam quaerat commodi nisi possimus eaque quae veniam, deleniti voluptas autem mollitia, recusandae officia blanditiis quisquam est consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nulla ipsam quidem iste porro necessitatibus commodi vel sapiente, reiciendis numquam repellat autem sed voluptas officia placeat explicabo amet eveniet? Rem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium, dolor distinctio sint est aspernatur earum consectetur beatae laborum rem sapiente quisquam modi aperiam unde fugiat atque facere dicta magnam?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore vero maxime. Esse ipsa incidunt quam, non voluptate repellendus? Soluta ullam voluptatem modi corporis deserunt praesentium, adipisci asperiores quod voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores non modi unde eveniet dignissimos mollitia dolorem tempore excepturi qui, veritatis autem iusto dolor eligendi voluptatum. Quas alias dolorem error.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dignissimos earum, placeat possimus officiis dolorum saepe tenetur error ipsa facere odit iste inventore animi, obcaecati modi aut omnis labore commodi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident animi impedit aperiam ipsum maxime consequatur, omnis ex ea quidem corrupti nihil error similique iusto id sed tempora recusandae. Molestiae, obcaecati?</p>
+
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+           }else{
+            itens.style.display = 'block'
+           }
+        }
+    </script>    
+</body>
+</html>

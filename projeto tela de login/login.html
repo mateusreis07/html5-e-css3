@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela e Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilo/midias-queries.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div id="imagem">
+                
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. <br>Faça login para acessar sua conta.</p>
+                <form action="login.html" method="post" autocomplete="on">
+                    <div>
+                        <span class="material-symbols-outlined">Person</span><label for="ilogin"><input type="email" name="login" id="ilogin" placeholder="seu e-mail" required autocomplete="email" maxlength="30"> Login </label>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined">key</span><label for="isenha"><input type="password" name="senha" id="isenha" placeholder="sua senha" required autocomplete="current-password" minlength="8" maxlength="15"> Senha</label> 
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

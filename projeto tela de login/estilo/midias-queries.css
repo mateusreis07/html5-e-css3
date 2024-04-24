@@ -1,0 +1,56 @@
+@charset "UFT-8";
+
+@media print {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-image: linear-gradient(to bottom right, rgb(79, 24, 131) 50%, #fff);
+    }
+    section{
+        display: flex;
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    #imagem{
+        width: 50vw;
+        height: 50vh;
+        border-radius: 20px 0px 0px 20px;
+        
+    }
+    #formulario{
+        height: 50vh;
+    }
+    #formulario p{
+        margin-bottom: 30px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to bottom right, #fff, rgb(79, 24, 131) 50%);
+    }
+    section{
+        width: 70vw;
+    }
+    #imagem{
+        width: 50vw;
+        height: 50vh;
+        border-radius: 20px 0px 0px 20px;
+        
+    }
+    #formulario{
+        padding: 50px;
+        width: 50vw;
+        height: 50vh;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
